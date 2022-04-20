@@ -1,0 +1,383 @@
+body	{
+
+	overflow: auto;
+	width: 100vw;
+	max-height: auto;
+	align-content: center;
+	margin: 0 auto;
+	justify-content: center;
+	position: absolute;
+	background-color: #f4f4f4;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	animation: transitionIn 0.75s;
+
+}
+
+@keyframes transitionIn
+{
+	from {
+		opacity: 0;
+		transform: rotateX(-10px);
+	}
+
+	to {
+		opacity: 1;
+		transform: rotateX(0px);
+	}
+}
+
+
+
+
+#back
+{
+    background-color: #f4f4f4;
+    height: 70px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    text-decoration: none;
+    z-index: 3;
+    clip-path: polygon(0% 25%,15% 0, 100% 0, 100% 100%, 100% 75%, 85% 100%, 10% 100%, 0% 100%, 0% 10%);
+    /* clip-path: polygon(0 0, 77% 0, 100% 35%, 100% 81%, 100% 100%, 20% 100%, 0 75%, 0% 20%); */
+
+}
+
+#backborder
+{
+  background-color: black;
+  height: 74px;
+  width: 144px;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  text-decoration: none;
+  top: 3vh;
+  left: 3vw;
+  z-index: 2;
+  clip-path: polygon(0% 25%,15% 0, 100% 0, 100% 100%, 100% 75%, 85% 100%, 10% 100%, 0% 100%, 0% 10%);
+
+}
+
+#backfont {
+  	font-size: 1.6em;
+  	font-family: MyriadPro;
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+
+
+a:link, a:visited, a:hover, a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo	{
+
+
+  height: 25vh;
+	background-image:url(../img/u1.png);
+	background-repeat: no-repeat;
+	background-position: 40% 5%;
+
+}
+
+nav	{
+
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 20vh;
+	align-items: center;
+	justify-content: center;
+	background-color: #f4f4f4;
+}
+
+.btn {
+
+	background-color: #f4f4f4;
+	border: none;
+	border-radius: 0;
+	margin: 1em;
+	background-color: transparent;
+	font-family: MyriadPro;
+	font-size: 24px;
+	font-weight: lighter;
+
+}
+
+.prabangus	{
+
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+
+}
+
+.klasik	{
+
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+
+}
+
+.ringrow	{
+
+	background-image: url(../img/u2.png);
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	border-width: 0px;
+	box-sizing:border-box;
+}
+
+
+.fullring	{
+
+
+	height: 550px;
+	width: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	margin-bottom: -5px;
+	margin-left: 15px;
+	margin-right: 15px;
+
+	}
+
+	.ring
+	{
+	position: relative;
+	height: 530px;
+	width: 530px;
+	transition: 0.5s;
+	z-index: 4;
+
+	}
+
+	.shadow	{
+
+	position: absolute;
+	height: 530px;
+	width: 530px;
+
+	}
+
+
+.text {
+
+	position: absolute;
+	bottom: 80%;
+	font-family: MyriadPro;
+	font-size: 20px;
+	opacity: 0;
+	transition: 1s;
+
+
+}
+
+p 	{
+
+}
+
+footer	{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 200px;
+	line-height: 10px;
+	gap: 250px;
+	color: white;
+	font-family: MyriadPro;
+	font-size: 18px;
+	font-weight: bolder;
+	background-image: linear-gradient(to bottom right, black, lightgray);
+	outline: 2px solid #f4f4f4;
+	}
+
+#footer1	{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 200px;
+	line-height: 10px;
+	gap: 250px;
+	color: white;
+	font-family: MyriadPro;
+	font-size: 18px;
+	font-weight: bolder;
+	background-image: linear-gradient(to bottom right, black, lightgray);
+	outline: 2px solid #f4f4f4;
+	}
+
+	#footer2	{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 200px;
+	line-height: 10px;
+	gap: 250px;
+	color: white;
+	font-family: MyriadPro;
+	font-size: 18px;
+	font-weight: bolder;
+	background-image: url(../img/Gollum-Ring.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 175%;
+	filter: grayscale(100%);
+	outline: 2px solid #f4f4f4;
+	}
+
+	#footer3	{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 200px;
+	line-height: 10px;
+	gap: 250px;
+	color: deeppink;
+	font-family: MyriadPro;
+	font-size: 18px;
+	font-weight: bolder;
+	background-image: url(../img/pimp.jpg);
+	background-repeat: no-repeat;
+	background-size: 125% 200%;
+	outline: 2px solid #f4f4f4;
+	}
+
+	footer p
+	{
+		text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+
+	}
+
+	.fcolumn
+
+	{
+		width: 200px;
+		height: 100px;
+
+	}
+
+	#footnav
+	{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		left: 50px;
+		bottom: 50px;
+		gap: 10px;
+		filter: grayscale(0%);
+	}
+
+	#orig, #spec, #pimp
+	{
+		background-image: linear-gradient(to bottom left, lightgray, black);
+		width: 150px;
+
+
+
+	}
+
+
+	@media screen and (max-width: 1060px) {
+
+  .ringrow	{
+
+	display: inline-flex;
+	flex-direction: column;
+
+}
+
+
+
+.luxring {
+
+	width: 100%;
+
+}
+
+.shadow	{
+
+		width: auto;
+
+
+
+}
+
+.logo	{
+
+
+	width: 100%;
+    height: 30vh;
+	background-image:url(../img/u1.png);
+	background-size: 100%, cover;
+	background-repeat: no-repeat;
+
+
+}
+
+
+
+footer	{
+
+	height: 15vh;
+	background-size: cover;
+
+	}
+
+	}
+
+
+	@media screen and (max-width: 1600px) {
+
+
+
+
+.logo	{
+
+
+	width: 100%;
+    height: 30vh;
+	background-image:url(../img/u1.png);
+	background-size: 125%, cover;
+	background-repeat: no-repeat;
+
+
+
+}
+
+
+footer	{
+
+	height: 15vh;
+	background-size: cover;
+
+	}
+
+
+	}
