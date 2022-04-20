@@ -1,0 +1,1031 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background: black;
+  font-family: sans-serif;
+  overflow: hidden;
+  -webkit-animation: transitionIn 1s;
+          animation: transitionIn 1s;
+}
+
+#mobility {
+  display: none;
+}
+
+@-webkit-keyframes transitionIn {
+  from {
+    opacity: 0.2;
+    -webkit-transform: rotateX(-10px);
+            transform: rotateX(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0px);
+            transform: rotateX(0px);
+  }
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0.2;
+    -webkit-transform: rotateX(-10px);
+            transform: rotateX(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotateX(0px);
+            transform: rotateX(0px);
+  }
+}
+
+#secBag {
+  opacity: 0;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background: radial-gradient(rgba(80, 11, 2, 0), rgba(80, 11, 2, 0.8));
+}
+
+.pointer {
+  pointer-events: auto;
+}
+
+.noPointer {
+  pointer-events: none;
+}
+
+#theart {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 8em;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 2;
+  color: #6d0d01;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0f0f0f;
+  text-align: center;
+}
+
+#back {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  font-size: 3em;
+  position: absolute;
+  bottom: 5%;
+  left: 2%;
+  font-family: 'Times New Roman', Times, serif;
+  z-index: 2;
+  color: #6d0d01;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0f0f0f;
+  text-align: center;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: Buffied;
+  src: url(Buffied.ttf);
+}
+
+#theartist {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  font-size: 9em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #6d0d01;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0f0f0f;
+  z-index: 2;
+  width: 4em;
+  max-width: -webkit-fit-content !important;
+  max-width: -moz-fit-content !important;
+  max-width: fit-content !important;
+  text-align: center;
+}
+
+#theartist2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  position: absolute;
+  font-size: 9em;
+  font-family: 'Times New Roman', Times, serif;
+  color: #6d0d01;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #0f0f0f;
+  z-index: 2;
+  width: 4em;
+  text-align: center;
+  display: none;
+}
+
+#kristis {
+  position: absolute;
+  top: 10%;
+  height: 750px;
+  width: 550px;
+  left: 33%;
+  cursor: pointer !important;
+  z-index: 2;
+  visibility: hidden;
+}
+
+#kris {
+  position: absolute;
+  height: 750px;
+  width: 550px;
+  background-image: url("img/kris.jpg");
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  cursor: pointer !important;
+  z-index: -2;
+}
+
+#kris2 {
+  position: absolute;
+  visibility: hidden;
+  height: 750px;
+  width: 550px;
+  background-image: url("img/kris2.jpg");
+  background-size: cover;
+  opacity: 0;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  cursor: pointer;
+  z-index: -2;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+#bgBox {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  left: 0;
+  z-index: -1;
+}
+
+#bgBox #bg {
+  background-image: url(img/meaning.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  -webkit-animation: kenburns 60s linear infinite alternate;
+          animation: kenburns 60s linear infinite alternate;
+  position: absolute;
+  z-index: -1;
+}
+
+#bgBox2 {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  right: 0;
+  z-index: -1;
+}
+
+#bgBox2 #bg2 {
+  background-image: url(img/meaning.jpg);
+  height: 100%;
+  width: 100%;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  -webkit-animation: kenburns 60s linear infinite alternate;
+          animation: kenburns 60s linear infinite alternate;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  position: absolute;
+}
+
+@-webkit-keyframes kenburns {
+  from {
+    background-size: 100% 120%;
+  }
+  to {
+    background-size: 140% 120%;
+  }
+}
+
+@keyframes kenburns {
+  from {
+    background-size: 100% 120%;
+  }
+  to {
+    background-size: 140% 120%;
+  }
+}
+
+.leftSide {
+  background-size: cover;
+  padding: 8rem 0 0;
+  width: 300px;
+  height: 200px;
+  border-radius: 0.5rem;
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  position: absolute;
+  left: 30%;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  cursor: pointer;
+}
+
+.leftSide h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 1rem;
+}
+
+.leftSide p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.rightSide {
+  background-size: cover;
+  padding: 8rem 0 0;
+  width: 300px;
+  height: 200px;
+  border-radius: 0.5rem;
+  -webkit-transition: -webkit-transform 1000ms ease;
+  transition: -webkit-transform 1000ms ease;
+  transition: transform 1000ms ease;
+  transition: transform 1000ms ease, -webkit-transform 1000ms ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  right: 33%;
+  margin: 0;
+  cursor: pointer;
+}
+
+.rightSide h2 {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-bottom: 1rem;
+}
+
+.rightSide p {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.holder {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1.5s;
+  transition: -webkit-transform 1.5s;
+  transition: transform 1.5s;
+  transition: transform 1.5s, -webkit-transform 1.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#craim {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: 1s;
+          transform: 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 5;
+  top: -30%;
+  -webkit-transform-origin: inherit;
+          transform-origin: inherit;
+}
+
+#craimFront {
+  background-image: url(img/Crimes.jpg);
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: 50% 10%;
+  border: 2px solid #6d0d01;
+  border-radius: 0.5rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 4;
+  color: ivory;
+  -webkit-text-stroke: 1px #6d0d01;
+}
+
+#craimFront, #craimBack {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#craim:hover .holder {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.noRotate {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#spidey {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 5;
+  top: -50%;
+}
+
+#spideyFront {
+  background-image: url(img/spidey.jpg);
+  width: 300px;
+  height: 200px;
+  background-size: 150% 130%;
+  background-position: 60% 80%;
+  border: 2px solid #6d0d01;
+  border-radius: 0.5rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 4;
+  color: ivory;
+  -webkit-text-stroke: 1px #6d0d01;
+}
+
+#spideyFront, #spideyBack {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#spidey:hover .holder {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#dalia {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 5;
+  top: -70%;
+}
+
+#daliaFront {
+  background-image: url(img/dalia.jpg);
+  background-size: 100% 150%;
+  background-position: 50% 30%;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #6d0d01;
+  border-radius: 0.5rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 4;
+  position: absolute;
+  color: ivory;
+  -webkit-text-stroke: 1px #6d0d01;
+}
+
+#daliaFront, #daliaBack {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+#dalia:hover .holder {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#justbe {
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: 1s;
+          transform: 1s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: -30%;
+  z-index: 5;
+}
+
+#justbeFront {
+  background-image: url(img/justbe.jpg);
+  background-size: 110% 150%;
+  background-position: 50% 30%;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  border: 2px solid #6d0d01;
+  border-radius: 0.5rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 4;
+  color: ivory;
+  -webkit-text-stroke: 1px #6d0d01;
+}
+
+#justbeFront, #justbeBack {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+#justbe:hover .holder {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#lovebirds {
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: -70%;
+  z-index: 5;
+}
+
+#lovebirdsFront {
+  background-image: url(img/love.jpg);
+  background-size: 100% 150%;
+  background-position: 50% 30%;
+  width: 300px;
+  height: 200px;
+  -webkit-transition: 1.5s ease;
+  transition: 1.5s ease;
+  position: absolute;
+  border: 2px solid #6d0d01;
+  border-radius: 0.5rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 4;
+  color: ivory;
+  -webkit-text-stroke: 1px #6d0d01;
+}
+
+#lovebirdsFront, #lovebirdsBack {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+#lovebirds:hover .holder {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#sonya {
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  bottom: -100%;
+  z-index: 5;
+}
+
+#sonyaFront {
+  background-image: url(img/sonya.jpg);
+  background-size: 100% 150%;
+  background-position: 50% 30%;
+  width: 300px;
+  height: 200px;
+  border: 2px solid #6d0d01;
+  border-radius: 0.5rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  z-index: 4;
+  color: ivory;
+  -webkit-text-stroke: 1px #6d0d01;
+}
+
+#sonyaFront, #sonyaBack {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute;
+}
+
+#sonya:hover .holder {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card-content {
+  color: ivory;
+  --padding: 1.5rem;
+  padding: var(--padding);
+  position: absolute;
+  border: 2px solid black;
+  bottom: 0;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 11, 2, 0)), to(rgba(80, 11, 2, 0.8)));
+  background: linear-gradient(rgba(80, 11, 2, 0), rgba(80, 11, 2, 0.8));
+}
+
+.card-content-back {
+  --padding: 1.5rem;
+  padding: var(--padding);
+  border: 2px solid #6d0d01;
+  bottom: 0;
+  width: 300px;
+  height: 200px;
+  background-color: #0f0f0f;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Buffied;
+  color: #6d0d01;
+  font-size: 5rem;
+  position: absolute;
+  z-index: 2;
+}
+
+.cardDescription {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+}
+
+.card-title {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.card-title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: calc(100% + 5% +var(--padding));
+  background-color: #6d0d01;
+  left: calc(var(--padding) * -1);
+  bottom: -3px;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+@media screen and (min-width: 1601px) and (max-width: 1800px) {
+  #theart {
+    font-size: 6em;
+  }
+  #theartist {
+    font-size: 6em;
+  }
+}
+
+@media screen and (min-width: 1401px) and (max-width: 1600px) {
+  #theart {
+    font-size: 6em;
+  }
+  #theartist {
+    font-size: 6em;
+    right: -4%;
+  }
+  .rightSide {
+    right: 25%;
+  }
+}
+
+@media screen and (min-width: 961px) and (max-width: 1400px) {
+  #theart {
+    font-size: 5em;
+    top: 2%;
+    left: 0%;
+    width: 5ch;
+  }
+  #theartist {
+    bottom: 5%;
+    right: -1%;
+    font-size: 4em;
+    width: 10ch;
+  }
+  .leftSide {
+    left: 22%;
+  }
+  .rightSide {
+    right: 26%;
+  }
+  .card-content-back, #sonyaFront, #sonyaBack, #sonya, #lovebirds, #lovebirdsFront,
+  #lovebirdsBack, .card-content,
+  #justbe, #justbeFront, #dalia, #daliaFront, #spidey, #spideyFront, #craim,
+  #craimFront, .leftSide, .rightSide {
+    width: 250px;
+    height: 175px;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+  #kristis {
+    position: absolute;
+    top: 5%;
+    height: 550px;
+    width: 400px;
+    left: 25vw;
+  }
+  #kris {
+    height: 550px;
+    width: 400px;
+  }
+  #kris2 {
+    height: 550px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  body {
+    height: 100%;
+    width: 99%;
+    overflow: hidden;
+  }
+  #theart {
+    font-size: 6rem;
+    top: 5%;
+    left: 3%;
+    width: 5ch;
+    height: auto;
+  }
+  #theartist {
+    font-size: 6rem;
+    width: 5ch;
+    height: auto;
+    top: 105%;
+    right: -25%;
+    position: absolute;
+  }
+  #back {
+    left: 5%;
+    top: 115%;
+    position: absolute;
+  }
+  .leftSide {
+    left: 30%;
+    top: -150%;
+  }
+  .rightSide {
+    right: -5%;
+  }
+  #craim {
+    top: -40%;
+  }
+  #kristis {
+    position: absolute;
+    top: 5%;
+    height: 550px;
+    width: 400px;
+    left: 32vw;
+  }
+  #kris {
+    height: 550px;
+    width: 400px;
+  }
+  #kris2 {
+    height: 550px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 514px) {
+  body {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+  }
+  #mobility {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    text-align: center;
+  }
+  #craim, #dalia, #spidey, #justbe, #lovebirds, #sonya {
+    position: static !important;
+    margin: 1em;
+  }
+  #thedeck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70%;
+    width: 100vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 5vh;
+  }
+  #theart {
+    display: none;
+  }
+  #theartist {
+    display: none;
+  }
+  #theartist2 {
+    font-size: 4rem;
+    position: absolute;
+    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 20ch;
+    top: 3%;
+    display: block;
+  }
+  #theartist2 p {
+    text-align: center;
+  }
+  #back {
+    bottom: 1%;
+    font-size: 1.4em;
+    color: #bd1e09;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0f0f0f;
+  }
+  .card-content-back, #sonyaFront, #sonyaBack, #sonya, #lovebirds, #lovebirdsFront,
+  #lovebirdsBack, .card-content,
+  #justbe, #justbeFront, #dalia, #daliaFront, #spidey, #spideyFront, #craim,
+  #craimFront, .leftSide, .rightSide {
+    width: 225px;
+    height: 160px;
+  }
+  .card-content-back {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    border: 2px solid #6d0d01;
+    bottom: 0;
+    width: 225px;
+    height: 160px;
+    background-color: #0f0f0f;
+    border-radius: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Buffied;
+    color: #6d0d01;
+    font-size: 4rem;
+    position: absolute;
+    z-index: 2;
+  }
+  #kristis {
+    top: 5%;
+    height: 550px;
+    width: 400px;
+    left: 25vw;
+  }
+  #kris {
+    height: 550px;
+    width: 400px;
+  }
+  #kris2 {
+    height: 550px;
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 450px) and (min-width: 286px) {
+  body {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 15%;
+  }
+  #craim, #dalia, #spidey, #justbe, #lovebirds, #sonya {
+    position: static !important;
+    margin: 1em;
+  }
+  #thedeck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 70%;
+    width: 100vw;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 5vh;
+  }
+  #theart {
+    display: none;
+  }
+  #theartist {
+    display: none;
+  }
+  #theartist2 {
+    font-size: 4rem;
+    position: absolute;
+    text-align: center;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 20ch;
+    top: 3%;
+    display: block;
+  }
+  #theartist2 p {
+    text-align: center;
+  }
+  #back {
+    bottom: 1%;
+    font-size: 1.4em;
+    color: #bd1e09;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #0f0f0f;
+  }
+  .card-content-back, #sonyaFront, #sonyaBack, #sonya, #lovebirds, #lovebirdsFront,
+  #lovebirdsBack, .card-content,
+  #justbe, #justbeFront, #dalia, #daliaFront, #spidey, #spideyFront, #craim,
+  #craimFront, .leftSide, .rightSide {
+    width: 200px;
+    height: 150px;
+  }
+  .card-content-back {
+    --padding: 1.5rem;
+    padding: var(--padding);
+    border: 2px solid #6d0d01;
+    bottom: 0;
+    background-color: #0f0f0f;
+    border-radius: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #6d0d01;
+    font-size: 4rem;
+    position: absolute;
+    z-index: 2;
+  }
+  #kristis {
+    top: 15%;
+    height: 450px;
+    width: 300px;
+  }
+  #kris {
+    height: 450px;
+    width: 300px;
+    right: 18vw;
+    z-index: 10;
+  }
+  #kris2 {
+    height: 450px;
+    width: 300px;
+    right: 18vw;
+    z-index: 10;
+  }
+}
+
+@media screen and (max-width: 285px) {
+  body {
+    background-color: black;
+  }
+  #main {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */

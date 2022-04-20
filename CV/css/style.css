@@ -1,0 +1,797 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body
+{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	box-sizing: border-box;
+	width: 100vw;
+	height: auto;
+	margin: 0 auto;
+	font-family: 'Roboto Slab', serif;
+	background-color: black;
+	line-height: 2;
+	overflow-x: hidden;
+  	animation: transitionIn 1s;
+		}
+
+    @keyframes transitionIn
+    {
+      from {
+        opacity: 0.2;
+        transform: rotateX(-10px);
+      }
+
+      to {
+        opacity: 1;
+        transform: rotateX(0px);
+      }
+    }
+
+		#goback
+		{
+
+			height:0;
+			width:0;
+			border-left: 35px solid transparent;
+			border-right: 35px solid transparent;
+			border-bottom: 60px solid #8b0000;
+			position: fixed;
+			transform: rotate(-90deg);
+			top: 3vh;
+			left: 5vw;
+		}
+
+		.mainbox
+
+		{
+
+			height: auto;
+			width: auto;
+			display: flex;
+			align-self: center;
+
+		}
+
+		/* LEFT SIDE */
+
+		#leftside
+
+		{
+			width: 25vw;
+			background-color: #8c0404;
+			height: auto;
+			display: flex;
+			flex-direction: column;
+			padding: 50px;
+
+		}
+
+		#summary
+		{
+			width: auto;
+			height: auto;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+
+    #itskills
+    {
+      user-select: none;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+	#socskills
+    {
+      user-select: none;
+      width: auto;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+		#languages td:first-child
+		{
+			width: 400px;
+		}
+
+		#languages td:nth-child(2)
+		{
+			opacity: 0.9;
+			color: #a7a7a7;
+		}
+
+		/*BUZZWORDS*/
+
+		a:any-link, a:active
+		{
+			text-decoration: none;
+
+		}
+
+		#myhobbies
+		{
+			user-select: none;
+			width: auto;
+			height: auto;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.hobies
+		{
+			color: rgba(255,255,255,0.75);
+			font-weight: 700;
+		}
+
+		#movies
+		{
+
+			font-weight: bolder;
+			position: relative;
+			cursor: default;
+		}
+
+		#movies[text]::after
+		{
+
+			content: attr(text);
+			display: block;
+			position: absolute;
+			background-color: black;
+			padding: 15px 15px;
+			text-align: center;
+			bottom: 100%;
+			right: -95%;
+			font-size: .8em;
+			transform: scale(0);
+			border-radius: 5px;
+			color: white;
+			-webkit-text-stroke: 0px white;
+		}
+
+		#movies[text]:hover::after
+		{
+			transform: scale(1);
+		}
+
+		#games
+		{
+
+			font-weight: bolder;
+			position: relative;
+			cursor: default;
+		}
+
+		#games[text]::after
+		{
+
+			content: attr(text);
+			display: block;
+			position: absolute;
+			background-color: black;
+			padding: 15px 15px;
+			text-align: center;
+			bottom: 100%;
+			right: -95%;
+			font-size: .8em;
+			transform: scale(0);
+			border-radius: 5px;
+			color: white;
+			-webkit-text-stroke: 0px white;
+		}
+
+		#games[text]:hover::after
+		{
+			transform: scale(1);
+		}
+
+		#history
+		{
+
+			font-weight: bolder;
+			position: relative;
+		}
+
+		#history[text]::after
+		{
+
+			content: attr(text);
+			display: block;
+			position: absolute;
+			background-color: black;
+			padding: 15px 15px;
+			text-align: center;
+			bottom: 100%;
+			right: -95%;
+			font-size: .8em;
+			transform: scale(0);
+			border-radius: 5px;
+			color: white;
+			-webkit-text-stroke: 0px white;
+		}
+
+		#history[text]:hover::after
+		{
+			transform: scale(1);
+		}
+
+
+
+		#reading
+		{
+
+			font-weight: bolder;
+			position: relative;
+			cursor: default;
+		}
+
+		#reading[text]::after
+		{
+
+			content: attr(text);
+			display: block;
+			position: absolute;
+			background-color: black;
+			padding: 15px 15px;
+			text-align: center;
+			bottom: 100%;
+			right: -95%;
+			font-size: .8em;
+			transform: scale(0);
+			border-radius: 5px;
+			color: white;
+			-webkit-text-stroke: 0px white;
+		}
+
+		#reading[text]:hover::after
+		{
+			transform: scale(1);
+		}
+
+
+		#scifi
+		{
+
+			font-weight: bolder;
+			position: relative;
+
+		}
+
+		#scifi[text]::after
+		{
+
+			content: attr(text);
+			display: block;
+			position: absolute;
+			background-color: black;
+			padding: 15px 15px;
+			text-align: center;
+			bottom: 100%;
+			right: -95%;
+			font-size: .8em;
+			transform: scale(0);
+			border-radius: 5px;
+			color: white;
+			-webkit-text-stroke: 0px white;
+		}
+
+		#scifi[text]:hover::after
+		{
+			transform: scale(1);
+		}
+
+
+		#wfo
+		{
+
+			font-weight: bolder;
+			position: relative;
+			color: #800000;
+		}
+
+		#wfo[text]::after
+		{
+
+			content: attr(text);
+			display: block;
+			position: absolute;
+			background-color: black;
+			padding: 15px 15px;
+			text-align: center;
+			bottom: 100%;
+			right: -95%;
+			font-size: .8em;
+			transform: scale(0);
+			border-radius: 5px;
+		}
+
+		#wfo[text]:hover::after
+		{
+			transform: scale(1);
+		}
+
+
+
+		p
+		{
+			width: 400px;
+		}
+
+	table
+	{
+		border: none;
+	}
+
+	hr
+	{
+		border: 1px solid black;
+	}
+
+	@keyframes slideshow {
+  0%    { top: 0; }
+  100%  { top: -100%; }
+}
+
+
+
+	#four
+{
+
+	position: relative;
+	overflow: hidden;
+	width: 268px;
+
+}
+
+#reel
+{
+	position: absolute;
+	background-image: url(../images/collage.jpg);
+	overflow: hidden;
+	animation: slideshow 60s linear infinite;
+	height: 800%;
+	width: 93%;
+}
+
+
+
+
+
+
+	/* RIGHT SIDE */
+
+	#rightside
+	{
+		width: 25vw;
+		background-color:#f8f8ff;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		padding: 50px;
+
+	}
+
+	#exp
+	{
+
+		margin-top: 21px;
+
+	}
+
+	.title
+	{
+		color: #b80000;
+		font-weight: bolder;
+
+	}
+
+	.place
+	{
+		font-weight: bolder;
+	}
+
+	.date
+	{
+		opacity: 0.6;
+	}
+
+::selection {
+color: white;
+background: #e0703e;
+}
+
+
+	#cont
+	{
+		width: 100px;
+}
+
+#cont td:nth-child(1){
+	width: 25px;
+	text-align: center;
+	padding-right: 10px;}
+
+
+	/*RESPONSIVE*/
+
+	@media screen and (max-width:1523px) and (min-width:1401px) {
+
+		#goback
+		{
+			top: 6vh;
+			left: 3vw;
+		}
+
+		#phead
+		{
+			border-left: 33px solid transparent;
+			border-right: 33px solid transparent;
+			border-bottom: 70px solid #8b0000;
+		}
+
+	}
+
+
+
+	@media screen and (max-width:1400px) and (min-width:1101px) {
+
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+body
+{
+	overflow-x: hidden;
+	box-sizing: border-box;
+		}
+
+
+		#goback
+		{
+			top: 1vh;
+			left:10px;
+			border-left: 16px solid transparent;
+			border-right: 16px solid transparent;
+			border-bottom: 30px solid black;
+		}
+
+#name {
+
+	margin-bottom: 53px;
+}
+
+.mainbox {
+
+	width: 100vw;
+	margin: 0;
+}
+
+		#leftside
+		{
+			width: 40vw;
+			display: block;
+		}
+
+		#rightside
+		{
+			width: 40vw;
+			display:block;
+		}
+
+			ul
+			{
+				width: 35vw;
+				line-height: 2.5;
+			}
+
+
+	div #edu, h3, hr, .title, .place, .date {
+
+		margin-top: 20px;
+		margin-bottom: 10px;
+			}
+
+			#four
+		{
+
+			position: relative;
+			overflow: hidden;
+			width:25vw;
+			display: block;
+		}
+
+		#reel
+		{
+			position: absolute;
+			background-image: url(../images/collage.jpg);
+			background-repeat: no-repeat;
+			overflow: hidden;
+			animation: slideshow 75s linear infinite;
+			height: 800%;
+			width: 100%;
+		}
+
+
+
+
+	}
+
+	@media screen and (max-width:1100px) and (min-width:801px) {
+
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+body
+{
+	overflow-x: hidden;
+	box-sizing: border-box;
+		}
+
+		#goback
+		{
+			border-left: 16px solid transparent;
+			border-right: 16px solid transparent;
+			border-bottom: 30px solid black;
+			top: 1vh;
+			left: 1vw;
+		}
+
+
+
+#name {
+
+	margin-bottom: 53px;
+}
+
+.mainbox {
+
+	width: 100vw;
+	margin: 0;
+	background-color: white;
+}
+
+		#leftside
+		{
+			width: 50vw;
+			display: block;
+		}
+
+		#rightside
+		{
+			min-width: 45vw;
+			display:block;
+
+		}
+
+			ul
+			{
+				width: 40vw;
+				line-height: 2.5;
+			}
+
+
+		#four, #reel
+	{
+		display: none;
+	}
+
+	div #edu, h3, hr, .title, .place, .date {
+
+		margin-top: 20px;
+		margin-bottom: 10px;
+			}
+
+	}
+
+	@media screen and (max-width:800px) and (min-width:381px) {
+
+		* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+}
+
+		body
+		{
+			overflow-x: hidden;
+			box-sizing: border-box;
+				}
+
+				#goback
+				{
+					border-left: 14px solid transparent;
+					border-right: 14px solid transparent;
+					border-bottom: 26px solid black;
+					top: 1vh;
+					left: 2px;
+				}
+
+				#four
+			{
+				display: none;
+			}
+
+			#reel
+			{
+			display: none;
+			}
+
+				.mainbox {
+
+					display: flex;
+					flex-direction: column-reverse;
+					width: 100%;
+					margin: 0;
+					background-color: white;
+				}
+
+		#rightside
+		{
+			width: 85vw;
+			padding: 50px;
+		}
+
+		p
+		{
+			width: 80vw;
+		}
+
+
+		div #edu, h3, hr, .title, .place, .date {
+
+			margin-top: 10px;
+			margin-bottom: 10px;
+				}
+
+		ul
+		{
+			width: 80vw;
+			line-height: 2.5;
+		}
+
+		li {
+			font-size: 14px;
+		}
+
+		#leftside
+		{
+			width: 100vw;
+		}
+	}
+
+	@media screen and (max-width:380px) and (min-width:301px) {
+
+		* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+		body
+		{
+			overflow-x: hidden;
+	    box-sizing: border-box;
+				}
+
+				#goback
+				{
+					display: none;
+
+				}
+
+				#goback2
+				{
+					border-left: 16px solid transparent;
+					border-right: 16px solid transparent;
+					border-bottom: 30px solid black;
+					position: absolute;
+					left: 2vw;
+					transform:rotate(-90deg);
+				}
+
+				#name{
+
+					/* margin-top: 2vh; */
+					margin-bottom: 0px;
+				}
+
+				#four
+			{
+				display: none;
+			}
+
+			#reel
+			{
+			display: none;
+			}
+
+				.mainbox {
+
+					display: flex;
+					flex-direction: column-reverse;
+					width: 100vw;
+					margin: 0;
+					/* background-color: white; */
+				}
+
+		#rightside
+		{
+			width: 100vw;
+			padding: 25px;
+		}
+
+		ul
+		{
+			width: 85vw;
+			line-height: 2.5;
+			margin-left: 10px;
+		}
+
+		p
+		{
+			width: 300px;
+		}
+
+
+		div #edu, h3, hr, .title, .place, .date {
+
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+
+		li {
+			font-size: 14px;
+		}
+
+		#leftside
+		{
+			width: 100vw;
+		}
+
+		#skills td:first-child
+		{
+			width: 400px;
+			padding-bottom: 8px;
+			font-size: 12px;
+		}
+
+		#skills td:nth-child(2)
+		{
+			opacity: 0.9;
+			color: #a7a7a7;
+			float: right;
+			font-size: 12px;
+		}
+
+		#languages table td:nth-child(2)
+		{
+			float: right;
+		}
+
+
+	}
+
+	@media screen and (max-width:300px) and (min-width:1px) {
+
+body
+{
+
+	visibility: hidden;
+	background-color: black;
+	overflow: hidden;
+}
+
+	}

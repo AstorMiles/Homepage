@@ -1,0 +1,485 @@
+/* @media screen and (max-width:1440px)  and (min-width: 1281px) {} */
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#back
+{
+    background-color: black;
+    height: 4rem;
+    width: 6.5rem;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+    position: inherit;
+    text-decoration: none;
+    z-index: 3;
+    clip-path: polygon(0% 25%,15% 0, 100% 0, 100% 100%, 100% 75%, 85% 100%, 10% 100%, 0% 100%, 0% 10%);
+    /* clip-path: polygon(0 0, 77% 0, 100% 35%, 100% 81%, 100% 100%, 20% 100%, 0 75%, 0% 20%); */
+
+}
+
+#backborder
+{
+  background-color: white;
+  height: 4.1rem;
+  width: 6.6rem;
+  display: flex;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-decoration: none;
+  transition: 1.5s;
+  top: 1vh;
+  left: 1vw;
+  z-index: 2;
+  clip-path: polygon(0% 25%,15% 0, 100% 0, 100% 100%, 100% 75%, 85% 100%, 10% 100%, 0% 100%, 0% 10%);
+
+}
+
+#backfont {
+  	font-size: 1.5em;
+  	font-family: 'Modern Typewritter';
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+}
+
+body
+{
+
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgb(14,16,15);
+	scroll-behavior: smooth;
+	background-image: url(../img/theflag.jpg);
+	overflow: hidden;
+	animation: transitionIn 1s;
+			}
+
+			@keyframes transitionIn
+			{
+			  from {
+				opacity: 0.2;
+				transform: rotateX(-10px);
+			  }
+		
+			  to {
+				opacity: 1;
+				transform: rotateX(0px);
+			  }
+			}
+
+
+
+/* #flag
+{
+	height: 100vh;
+	width:100vw;
+	background-image: url(../img/theflag.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left:0;
+
+} */
+
+
+	h1 {
+		font-weight: 500;
+		line-height: 3rem;
+		font-size: 2.5rem;
+		font-family: "Poets Electra Roman No 2";
+		font-style: italic; color: whitesmoke;
+		font-variant-ligatures: normal;
+		font-variant-caps: normal;
+									letter-spacing: normal;
+									orphans: 2;
+									text-align: left;
+									 text-indent: 0px;
+									 text-transform: none;
+									 white-space: normal;
+									 widows: 2;
+									 word-spacing: 0px;
+			}
+
+
+
+			/* rgb(52, 52, 52) */
+
+
+#holder
+{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	/* grid-gap: 20px; */
+	/* display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center; */
+	height: 95%;
+	width: 80vw;
+	box-sizing: border-box;
+	/* border: 5px solid blue; */
+	align-content: center;
+	justify-content: center;
+	margin-top: 2em;
+
+}
+
+
+.square
+	{
+
+		height: 45vh;
+		width: 30vh;
+		box-sizing: border-box;
+		border: 2px solid white;
+		z-index: 1;
+		position: relative;
+		
+	
+
+		}
+
+		#s1
+		{
+			background-image: url(../img/1.jpg);
+			background-color: black;
+			background-size: 250%;
+			background-position: 65% 50%;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			transition: 3s;
+			grid-column: 1;
+			grid-row: 1;
+			transform-origin: top left;
+			filter: sepia(1);
+
+					/* box-shadow: 1px 1px 18px 4px rgba(33,128,222,1); */
+		}
+
+
+
+		#s2
+		{
+			background-image: url(../img/2.jpg);
+			background-size: 450%;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			transition: 2.5s;
+			grid-column: 2/3;
+			grid-row: 1/2;
+			background-color: rgb(23,15,12);
+			transform-origin: top left;
+			overflow: hidden;
+			filter: sepia(1);
+		}
+
+		#s3
+		{
+			background-image: url(../img/3.jpg);
+			background-size: 350%;
+			background-repeat: no-repeat;
+			background-position: 75% 18%;
+			transition: 3.5s;
+			grid-column: 3/4;
+			grid-row: 1/2;
+			transform-origin: top left;
+			background-color: black;
+			overflow: hidden;
+			filter: sepia(1);
+
+		}
+
+		/* @keyframes closeUpS3 {
+
+			from {
+
+				background-size: 350%;
+				background-position: 75% 18%;
+
+			}
+
+		to {
+
+			background-size: 350%;
+			background-position: 25% 50%;
+
+		}
+		}
+
+		@keyframes stepBackS3 {
+
+			from {
+
+			background-size: 350%;
+			background-position: 25% 50%;
+
+			}
+
+		to {
+
+			background-size: 350%;
+			background-position: 75% 18%;
+
+		}
+		} */
+
+		#s4
+		{
+			background-image: url(../img/4.jpg);
+			background-size: 300%;
+			background-position: 100% 30%;
+			transition: 2.5s;
+			grid-column: 4/5;
+			grid-row: 1/2;
+			transform-origin: top left;
+			overflow: hidden;
+			filter: sepia(1);
+		}
+
+		#s5
+		{
+			background-image: url(../img/5.jpg);
+			background-size: 300%;
+			background-position: 0% 50%;
+			background-repeat: no-repeat;
+			transition: 2.5s;
+			grid-column: 5;
+			grid-row: 1;
+			overflow: hidden;
+			transform-origin: top right;
+			filter: sepia(1);
+
+		}
+
+		#s6
+		{
+			background-image: url(../img/6.jpg);
+			background-size: 220%;
+			background-position: 0% 10%;
+			transition: 2.5s;
+			grid-column: 1;
+			grid-row: 2;
+			transform-origin: top left;
+			overflow: hidden;
+			filter: sepia(1);
+		}
+
+		#s7
+		{
+			background-image: url(../img/7.jpg);
+			background-size: 450%;
+			background-position: 25% 40%;
+			transition: 3.5s;
+			grid-column: 2;
+			grid-row: 2;
+			background-repeat: no-repeat;
+			overflow: hidden;
+			animation-duration: 4s;
+			animation-timing-function: ease;
+			transform-origin: top left;
+			filter: sepia(1);
+		}
+
+		/* @keyframes closeUp {
+
+			from {
+
+				background-size: 150%;
+				background-position: 50% 50%;
+
+			}
+
+		to {
+
+			background-size: 300%;
+			background-position: 50% 50%;
+
+		}
+		}
+
+		@keyframes stepBack {
+
+			from {
+
+				background-size: 300%;
+				background-position: 50% 50%;
+
+			}
+
+		to {
+
+			background-size: 150%;
+			background-position: 50% 50%;
+
+		}
+		} */
+
+		#s8
+		{
+			background-image: url(../img/8.jpg);
+			background-size: 450%;
+			background-position: 40% 20%;
+			transition: 2.5s;
+			grid-column: 3;
+			grid-row: 2;
+			transform-origin: top left;
+			filter: sepia(1);
+		}
+
+
+		#s9
+		{
+
+			background-image: url(../img/9.jpg);
+			background-size: 400%;
+			background-position: 100% 0%;
+			transition: 4s;
+			grid-column: 4/5;
+			grid-row: 2/3;
+			animation-duration: 2s;
+			animation-timing-function: ease-in-out;
+			transform-origin: top left;
+			filter: sepia(1);
+		}
+
+		#s10
+		{
+
+			background-image: url(../img/10.jpg);
+			background-size: 500%;
+			background-position: 65% 0%;
+			transition: 4s;
+			grid-column: 5/6;
+			grid-row: 2/3;
+			filter: sepia(1);
+			transform-origin: top left;
+
+		}
+
+
+
+		#s1:hover, #s2:hover, #s3:hover, #s4:hover, #s5:hover, #s6:hover, #s7:hover, #s8:hover, #s9:hover, #s10:hover{
+
+			cursor: grab;
+		}
+
+		/* #s9:hover
+		{
+
+			/* height: 600px;
+			width: 450px;
+			z-index: 2;
+		} */
+
+		#secondpart {
+
+			height: auto;
+			width: 100vw;
+			box-sizing: border-box;
+		}
+
+		#holder2 {
+			display: grid;
+			grid-template-columns: repeat(3, 250px);
+			grid-template-rows: 3;
+			grid-gap: 20px;
+			height: auto;
+			width: 60vw;
+			box-sizing: border-box;
+			border: 5px solid black;
+			align-items: center;
+			justify-content: center;
+		}
+
+			/* #s1:hover, #s2:hover, #e3:hover, #e4:hover, #e5:hover, #e6:hover, #e7:hover, #e8:hover, #e9:hover
+		{
+			filter: sepia(0);
+			transition: 2s;
+		} */
+
+
+
+
+/*
+@media screen and (max-width:1440px)  and (min-width: 1281px) {
+
+
+				#partsofher
+				{
+					height: auto;
+					width: 60vw;
+					display: flex;
+					flex-flow: column;
+				}
+
+				#thepoem
+				{
+					width:40vw;
+					height: 100vh;
+					padding-right: 20px;
+					padding-left: 20px;
+				}
+
+
+	#firstpart {
+
+		height: auto;
+		width: 95vw;
+		box-sizing: border-box;
+	}
+
+	#holder
+	{
+		display: grid;
+		grid-template-columns: repeat(3, 250px);
+		grid-template-rows: 3;
+		grid-gap: 20px;
+		height: auto;
+		width: 60vw;
+		box-sizing: border-box;
+		border: 5px solid black;
+		align-items: center;
+		justify-content: center;
+
+	}
+
+	#secondpart {
+
+		height: auto;
+		width: 100vw;
+		box-sizing: border-box;
+	}
+
+	#holder2 {
+		display: grid;
+		grid-template-columns: repeat(3, 250px);
+		grid-template-rows: 3;
+		grid-gap: 20px;
+		height: auto;
+		width: 60vw;
+		box-sizing: border-box;
+		border: 5px solid black;
+		align-items: center;
+		justify-content: center;
+	}
+
+
+
+
+				} */

@@ -1,0 +1,1206 @@
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
+  }
+
+body
+{
+	box-sizing:border-box;
+	margin: 0 auto;
+	overflow-x: hidden;	
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	user-select: none;
+	background: linear-gradient(to top right,
+        rgb(14, 13, 13,1),
+        rgba(39, 1, 1, 1)
+    );
+	/* animation: inFocus 0.5s linear; */
+	/* transition: background-image 0.1s linear; */
+
+	}
+
+	@keyframes transitionIn
+	{
+		from {
+			opacity: 0;
+			transform: rotateY(10px);
+			filter: blur(1px);
+		}
+
+		to {
+			opacity: 1;
+			transform: rotateY(0px);
+			filter: blur(0px);
+		}
+	}
+
+	#wider{
+		display: none;
+	}
+
+@font-face {
+	font-family: 'Modern Typewritter';
+	src: url('../fonts/MODERN TYPEWRITER.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Elder';
+	src: url('../fonts/DubstepDungeons-D3PW.ttf') format('truetype');
+}
+
+#foldera h1
+{
+	font-size: 4em;
+	color: black;
+	position: absolute;
+	margin: 80px;
+	top: 20px;
+	transition-duration: 2s;
+	text-decoration: none;
+	font-family: 'Elder';
+}
+
+
+#folderb h1
+{
+	font-size: 2.2em;
+	color: black;
+	position: absolute;
+	margin: 15px;
+	top: 100px;
+	/* font-family: 'Modern Typewritter'; */
+	transition-duration: 2s;
+	text-decoration: none;
+	font-family: 'Elder';
+	letter-spacing: 2px;
+}
+
+#folderc h1
+{
+	font-size: 2.2em;
+	color: black;
+	position: absolute;
+	margin: 15px;
+	top: 80px;
+	transition-duration: 2s;
+	text-decoration: none;
+	font-family: 'Elder';
+	letter-spacing: 3px;
+}
+
+#logocontainer
+{
+	display: flex;
+	flex-direction: column;
+	}
+
+#liberlogos
+{
+display: flex;
+position: relative;
+top: 2vh;
+left: 1vw;
+}
+
+#liberlogos h1
+{
+
+	font-size: 50px;
+	margin-top: 102px;
+	margin-left: 15px;
+	color: #fdfff5;
+	font-family: 'Elder';
+	font-weight: 200;
+	letter-spacing: 12px;
+	-webkit-text-stroke: 3px #fffff0;
+}
+
+@keyframes extension {
+
+	from
+	{
+
+		width: 0px;
+		box-shadow: 0px 0px 8px 15px #8b0000;
+
+	}
+
+to {
+
+	width: 600px;
+	box-shadow: 0px 0px 2px 8px #8b0000;
+}
+
+}
+
+						#theline
+						{
+							width: 600px;
+							box-shadow: 0px 0px 0px 8px #8b0000;
+							animation-name: extension;
+							animation-duration: 1s;
+							animation-timing-function: ease-out;
+							position: relative;
+							bottom: 10px;
+							margin-top: 10px;
+
+						}
+
+#top
+{
+	height: 25vh;
+	width: 100%;
+	position: relative;
+	margin-bottom: 150px;
+	/* background-image: linear-gradient(#b30652 60%, yellow); */
+}
+
+
+/*THE PYRAMID*/
+
+#pyramid
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	top: 5vh;
+	left: 5vw;
+}
+
+#phead
+{
+
+	height:0;
+	width:0;
+	border-left: 36px solid transparent;
+	border-right: 36px solid transparent;
+	border-bottom: 40px solid #8b0000;
+	position: relative;
+	top: 65px;
+}
+
+
+	#pbottomb
+	{						border-bottom: 48px solid #8b0000;
+							border-left: 42px solid transparent;
+							border-right: 42px solid transparent;
+							height: 0px;
+							width: 80px;
+							position: relative;
+							top: 75px;
+						}
+
+/* THE BOTTOM */
+
+/* #folders
+{
+
+position: relative;
+top: 950px;
+height: 70vh;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
+} */
+
+@keyframes clineextension {
+
+	from
+	{
+
+		height: 0vh;
+		box-shadow: 0px 0px 9px 15px #8b0000;
+
+	}
+
+to {
+
+	height: 100vh;
+	box-shadow: 0px 0px 2px 9px #8b0000;
+
+}
+}
+
+/* @keyframes clineextension {
+
+	0%
+	{
+		height: 0;
+		box-shadow: 0px 0px 2px 10px #8b0000;
+		bottom:-10px;
+	}
+
+	30%
+	{
+		height: 1600px;
+		box-shadow: 0px 0px 2px 10px #8b0000;
+		bottom:-10px;
+		}
+
+
+	60%
+	{
+		height: 1600px;
+		transform: translateY(-100%);
+		box-shadow: 0px 0px 2px 10px #8b0000;
+		bottom:-10px;
+	}
+
+	80%
+	{
+		height: 1600px;
+		transform: translateY(100%);
+		box-shadow: 0px 0px 2px 10px #8b0000;
+		bottom:-10px;
+	}
+
+	100%
+	{
+		height: 1600px;
+		transform: translateY(100%);
+		box-shadow: 0px 0px 2px 10px #8b0000;
+		bottom:-10px;
+	}
+
+} */
+
+#cline
+{
+
+	width: 0px;
+	position:absolute;
+	box-shadow: 0px 0px 0px 10px #8b0000;
+	right: 525px;
+	height: 100vh;
+	animation-name: clineextension;
+	animation-duration: 2s;
+	/* animation-iteration-count: infinite; */
+	z-index: 1;
+	/* animation-direction: alternate;
+	animation-timing-function: ease-in-out; */
+}
+
+/* #clinepulse
+{
+	width: 0px;
+	height: 100vh;
+	position:absolute;
+	bottom: 0;
+	box-shadow: 0px 0px 0px 10px #8b0000;
+	right: 525px;
+	animation-name: pulseline;
+	animation-direction: alternate;
+	animation-duration: 2s;
+	animation-iteration-count:infinite;
+	z-index: 0;
+} */
+
+@keyframes pulseline {
+
+	from
+	{
+
+		height: 0vh;
+		box-shadow: 0px 0px 9px 15px #8b0000;
+
+	}
+
+to {
+
+	height: 100vh;
+	box-shadow: 0px 0px 2px 10px #8b0000;
+
+}
+}
+
+#rline
+{
+
+	width: 100vw;
+	height: 0px;
+	position:absolute;
+	right: 0;
+	top: 535px;
+	z-index: 1;
+	box-shadow: 0px 0px 0px 9px #8b0000;
+	animation-name: rlineextension;
+	animation-duration: 1s;
+}
+
+@keyframes rlineextension {
+
+	from
+	{
+
+		width: 0vw;
+		box-shadow: 0px 0px 9px 15px #8b0000;
+	}
+
+to {
+
+	width: 100vw;
+	box-shadow: 0px 0px 2px 9px #8b0000;
+
+
+}
+}
+
+
+/*FOLDERS*/
+
+
+
+
+@keyframes float {
+	from {
+		transform: translateY(0px);
+	}
+	to {
+		transform: translateY(-10px);
+	}
+}
+
+
+
+
+#foldera
+{
+
+	background-color: #fdfff5;
+	display: inline-block;
+	height: 300px;
+	width: 250px;
+	position: relative;
+	margin-right: 175px;
+	transition-duration: 1s;
+	animation-name: float;
+	animation-duration:4s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+	z-index: 2;
+	clip-path: polygon(12% 0, 88% 0, 100% 0, 100% 88%, 88% 100%, 12% 100%, 0 100%, 0 12%);
+
+}
+
+
+#foldera:hover, #folderb:hover, #folderc:hover{
+
+background-color: #8b0000;
+cursor: pointer;
+color: #fdfff5;
+
+}
+
+#folderb
+{
+
+	background-color: #fdfff5;
+	display: inline-block;
+	height: 300px;
+	width: 250px;
+	position: relative;
+	margin-right: 175px;
+	transition-duration: 1s;
+	animation-name: float;
+	animation-duration:3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	animation-timing-function: ease;
+	z-index: 2;
+	clip-path: polygon(0 0, 88% 0, 100% 12%, 100% 86%, 100% 100%, 12% 100%, 0 88%, 0 14%);
+
+}
+
+
+#folderc
+{
+
+	background-color: #fdfff5;
+	display: inline-block;
+	height: 300px;
+	width: 250px;
+	position: relative;
+	transition-duration: 1s;
+	animation-name: float;
+	animation-duration:3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease;
+	z-index: 2;
+	clip-path: polygon(12% 0, 88% 0, 100% 0, 100% 88%, 88% 100%, 12% 100%, 0 100%, 0 12%);
+
+}
+
+
+
+
+/*QUERIES*/
+
+@media screen and (max-width: 2000px) and (min-width:1820px) {
+
+#cline
+{
+	right: 525px;
+}
+
+}
+
+@media screen and (max-width: 1821px) and (min-width:1619px) {
+	#cline
+	{
+		right: 425px;
+	}
+}
+
+@media screen and (max-width: 1620px) and (min-width:1423px) {
+
+	#cline
+	{
+		right: 325px;
+	}
+}
+
+@media screen and (max-width: 1422px) and (min-width:1222px) {
+
+	#cline
+	{
+		right: 225px;
+	}
+}
+
+@media screen and (max-width: 1222px) and (min-width:1201px) {
+
+	#cline
+	{
+		right: 125px;
+	}
+}
+
+@media screen and (max-width: 1200px) and (min-width:1094px) {
+
+	#cline
+	{
+		right: 250px;
+	}
+}
+
+@media screen and (max-width:1020px) and (min-width:1093px) {
+
+	#cline
+	{
+		right: 215px;
+	}
+}
+
+@media screen and (max-width:1092px) and (min-width:905px) {
+
+	#cline
+	{
+		right: 150px;
+	}
+}
+
+@media screen and (max-width:904px) and (min-width:1px) {
+
+	#cline
+	{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+
+		#rline
+		{
+			top: 500px;
+		}
+
+	#foldera, #folderb, #folderc
+	{
+
+	
+		display: inline-block;
+		height: 275px;
+		width: 225px;
+		position: relative;
+		margin-right: 130px;
+	}
+
+#folderc
+{
+	margin-right: 0px;
+}
+
+
+	#foldera h1
+	{
+		font-size: 3.5em;	
+		position: absolute;
+		margin: 70px;	
+		top: 20px;	
+	}
+
+
+	#folderb h1
+	{
+		font-size: 1.7em;
+		color: black;
+		position: absolute;	
+		top: 90px;	
+		margin: 30px;
+	}
+
+	#folderc h1
+	{
+		font-size: 1.7em;
+		color: black;
+		position: absolute;	
+		top: 70px;	
+		margin: 30px;
+	}
+
+}
+
+@media screen and (max-width: 980px) and (min-width: 901px) {
+
+	#rline
+	{
+		top: 445px;
+		
+	}
+
+	#cline
+{
+
+	width: 0px;
+	position:absolute;
+	box-shadow: 0px 0px 0px 10px #8b0000;
+	right: 175px;
+}
+
+	#top
+	{
+		height: 25vh;
+		width: 100%;
+		position: relative;
+		margin-bottom: 50px;
+		/* background-image: linear-gradient(#b30652 60%, yellow); */
+	}
+
+
+#foldera, #folderb {
+
+	margin-right: 10px;
+}
+
+
+#folders
+{
+
+display: flex;
+width: 100%;
+flex-direction: row;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: center;
+margin: 0 auto;
+}
+
+
+#foldera, #folderb, #folderc
+{
+
+	background-color: #fdfff5;
+	display: block;
+	margin: 35px;
+
+}
+
+}
+
+@media screen and (max-width: 900px) and (min-width:801px) {
+
+	#liberlogos h1
+	{
+
+		font-size: 40px;
+		margin-top: 103px;
+		margin-left: 15px;
+	}
+
+	#theline
+	{
+		width: 500px;
+		box-shadow: 0px 0px 0px 8px #8b0000;
+		animation-name: extension;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		position: relative;
+		margin-top: 20px;
+
+	}
+
+	#phead
+	{
+
+		height:0;
+		width:0;
+		border-left: 28px solid transparent;
+		border-right: 28px solid transparent;
+		border-bottom: 36px solid #8b0000;
+		position: relative;
+		top: 65px;
+	}
+
+
+		#pbottomb
+		{						border-bottom: 42px solid #8b0000;
+								border-left: 36px solid transparent;
+								border-right: 36px solid transparent;
+								height: 0px;
+								width: 62px;
+								position: relative;
+								top: 75px;
+							}
+
+	@keyframes extension {
+
+		from
+		{
+
+			width: 0px;
+			box-shadow: 0px 0px 8px 15px #8b0000;
+
+		}
+
+	to {
+
+		width: 500px;
+		box-shadow: 0px 0px 2px 8px #8b0000;
+	}
+
+	}
+
+	@keyframes clineextension {
+
+		from
+		{
+
+			height: 0vh;
+			box-shadow: 0px 0px 9px 15px #8b0000;
+
+		}
+
+	to {
+
+		height: 100vh;
+		box-shadow: 0px 0px 2px 9px #8b0000;
+
+	}
+}
+
+	#cline
+	{
+
+		width: 0px;
+		height: 860px;
+		bottom: -350px;
+		position:absolute;
+		box-shadow: 0px 0px 0px 10px #8b0000;
+		left: 155px;
+		animation-name: clineextension;
+		animation-duration: 1s;
+		z-index: 1;
+
+	}
+
+	#rline{
+		top: 450px;
+	}
+
+	
+	#folders
+	{
+	
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	}
+
+#foldera, #folderb, #folderc
+
+{
+							
+	display: block;
+	height: 225px;
+	width: 200px;
+	margin: 30px;
+	margin-top: 0px;
+}
+
+
+
+#foldera h1
+
+{
+	font-size: 3em;
+	position: absolute;
+	margin: 50px;
+	top: 25px;
+}
+
+#folderb h1
+
+{
+	color: black;
+	position: absolute;
+	margin: 10px;
+	top: 70px;
+	font-size: 1.5em;
+}
+
+#folderc h1
+
+{
+
+	position: absolute;
+	margin: 10px;
+	top: 60px;
+	font-size: 1.5em;
+}
+
+}
+
+@media screen and (max-width:800px) and (min-width:481px) {
+
+	#phead
+
+	{
+
+		height:0;
+		width:0;
+		border-left: 26px solid transparent;
+		border-right: 26px solid transparent;
+		border-bottom: 33px solid #8b0000;
+		position: relative;
+		top: 65px;
+	}
+						
+
+
+	#pbottomb
+
+	{
+		border-bottom: 40px solid #8b0000;
+		border-left: 34px solid transparent;
+		border-right: 34px solid transparent;
+		height: 0px;
+		width: 58px;
+		position: relative;
+		top: 75px;
+	}
+									
+
+	#liberlogos h1
+	{
+
+		font-size: 32px;
+		margin-top: 103px;
+		margin-left: 15px;
+		margin-bottom: 35px;
+	}
+
+	#theline
+	{
+		width: 455px;
+
+	}
+
+	@keyframes extension {
+
+		from
+		{
+			width: 0px;
+		}
+
+	to {
+
+		width: 455px;
+	}
+
+	}
+
+		#rline
+{
+
+	display: none;
+
+}
+
+	#folders
+{
+
+
+
+margin-left: 20vw;
+margin-top: -10vh;
+}
+
+#foldera, #folderb, #folderc
+
+{
+							
+	display: block;
+	height: 225px;
+	width: 200px;
+	margin-bottom: 15px;
+}
+
+
+
+#foldera h1
+
+{
+	font-size: 3em;
+	position: absolute;
+	margin: 60px;
+	top: 25px;
+}
+
+#folderb h1
+
+{
+	color: black;
+	position: absolute;
+	margin: 15px;
+	top: 80px;
+	font-size: 1.5em;
+}
+
+#folderc h1
+
+{
+
+	position: absolute;
+	margin: 15px;
+	top: 60px;
+	font-size: 1.5em;
+}
+
+}
+
+
+
+@media screen and (max-width:480px) and (min-width:361px) {
+
+	#phead
+
+	{
+
+		height:0;
+		width:0;
+		border-left: 26px solid transparent;
+		border-right: 26px solid transparent;
+		border-bottom: 33px solid #8b0000;
+		position: relative;
+		top: 65px;
+	}
+						
+
+
+	#pbottomb
+
+	{
+		border-bottom: 40px solid #8b0000;
+		border-left: 34px solid transparent;
+		border-right: 34px solid transparent;
+		height: 0px;
+		width: 58px;
+		position: relative;
+		top: 75px;
+	}
+									
+
+	#liberlogos h1
+	{
+
+		font-size: 1.2em;
+		margin-top: 100px;
+		margin-left: 10px;	
+		-webkit-text-stroke: 2px #fffff0;
+		margin-bottom: 5px;
+		width: 5ch;
+	}
+
+	@keyframes extension {
+
+		from
+		{
+
+			width: 0px;
+			box-shadow: 0px 0px 8px 15px #8b0000;
+
+		}
+
+	to {
+
+		width: 295px;
+		box-shadow: 0px 0px 2px 8px #8b0000;
+	}
+
+	}
+
+	#theline
+
+	{
+		width: 295px;
+		box-shadow: 0px 0px 0px 8px #8b0000;
+		animation-name: extension;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		position: relative;
+		bottom: -15px;
+		}
+
+		#rline
+{
+
+	display: none;
+
+}
+
+
+
+	
+
+	#folders
+{
+
+
+
+margin-left: 30vw;
+margin-top: -10vh;
+}
+
+#foldera, #folderb, #folderc
+
+{
+							
+	display: block;
+	height: 225px;
+	width: 200px;
+	margin-bottom: 15px;
+}
+
+
+
+#foldera h1
+
+{
+	font-size: 3em;
+	position: absolute;
+	margin: 60px;
+	top: 25px;
+}
+
+#folderb h1
+
+{
+	color: black;
+	position: absolute;
+	margin: 15px;
+	top: 80px;
+	font-size: 1.5em;
+}
+
+#folderc h1
+
+{
+
+	position: absolute;
+	margin: 15px;
+	top: 60px;
+	font-size: 1.5em;
+}
+
+}
+
+
+
+@media screen and (max-width:360px) and (min-width:300px) {
+
+	#phead
+
+	{
+
+		height:0;
+		width:0;
+		border-left: 26px solid transparent;
+		border-right: 26px solid transparent;
+		border-bottom: 33px solid #8b0000;
+		position: relative;
+		top: 65px;
+	}
+						
+
+
+	#pbottomb
+
+	{
+			border-bottom: 40px solid #8b0000;
+		border-left: 34px solid transparent;
+		border-right: 34px solid transparent;
+		height: 0px;
+		width: 58px;
+		position: relative;
+		top: 75px;
+	}
+									
+
+	#liberlogos h1
+	{
+
+		font-size: 1em;
+		margin-top: 105px;
+		margin-left: 10px;	
+		-webkit-text-stroke: 2px #fffff0;
+		margin-bottom: 5px;
+		width: 5ch;
+	}
+
+	@keyframes extension {
+
+		from
+		{
+
+			width: 0px;
+			box-shadow: 0px 0px 8px 15px #8b0000;
+
+		}
+
+	to {
+
+		width: 295px;
+		box-shadow: 0px 0px 2px 8px #8b0000;
+	}
+
+	}
+
+	#theline
+
+	{
+		width: 295px;
+		box-shadow: 0px 0px 0px 8px #8b0000;
+		animation-name: extension;
+		animation-duration: 1s;
+		animation-timing-function: ease-out;
+		position: relative;
+		bottom: -15px;
+		}
+
+		#rline
+{
+
+	display: none;
+
+}
+
+
+
+	
+
+	#folders
+{
+
+
+width: 100vw;
+justify-content: center;
+margin-left: 50vw;
+margin-top: -10vh;
+}
+
+#foldera, #folderb, #folderc
+
+{
+							
+	display: block;
+	height: 200px;
+	width: 175px;
+	margin-bottom: 15px;
+}
+
+
+
+#foldera h1
+
+{
+	font-size: 3em;
+	position: absolute;
+	margin: 50px;
+	top: 25px;
+}
+
+#folderb h1
+
+{
+	color: black;
+	position: absolute;
+	margin: 10px;
+	top: 70px;
+	font-size: 1.5em;
+}
+
+#folderc h1
+
+{
+
+	position: absolute;
+	margin: 10px;
+	top: 60px;
+	font-size: 1.5em;
+}
+
+}
+
+
+
+
+
+/*SMALLEST SCREENS*/
+
+
+
+@media screen and (max-width:299px) and (min-width:1px) {
+
+	body {
+		visibility:hidden;
+		overflow-y: hidden;
+	}
+
+	#wider
+	{
+
+		visibility: visible;
+		color: #fdfff5;
+		text-align: center;
+		font-size: 40px;
+		position: absolute;
+		top: 40vh;
+		display: block;
+		left: 40vw;		
+	}
+}
